@@ -1,0 +1,103 @@
+/* General page style */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #003366, #0066cc);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+  background-color: #0066cc;
+  padding: 12px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* News section */
+.news {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+.article {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.article:hover {
+  transform: translateY(-3px);
+}
+.article h2 {
+  color: #0066cc;
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* 📱 Responsive design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .news {
+    padding: 10px;
+  }
+  .article {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 1.4em;
+  }
+  nav {
+    padding: 8px;
+  }
+  .article h2 {
+    font-size: 1.2em;
+  }
+}
